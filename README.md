@@ -1,5 +1,8 @@
 # Ejercicios de recursión.
----
+
+
+## Ejercicios de recursion sin cola
+
 
 ### *Ejercicio 1*
 
@@ -76,3 +79,6 @@ Cuenta cuántas vocales hay en un texto
     - Define vocales = 'aeiouAEIOU'
     - Caso recursivo: si primera letra es vocal, suma 1
     - Siempre procesa el resto del texto
+
+## Ejercicios de recursion con cola
+
