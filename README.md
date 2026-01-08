@@ -82,3 +82,67 @@ Cuenta cuántas vocales hay en un texto
 
 ## Ejercicios de recursion con cola
 
+### *Ejercicio 1*
+
+    Cuenta elementos usando tail recursion
+    
+    Ejemplo:
+    contar_elementos_cola([1, 2, 3]) → 3
+    
+    Pistas:
+    - Caso base: lista vacía → retorna acumulador
+    - Caso recursivo: incrementa acumulador y procesa resto
+    - ¡La llamada recursiva debe ser lo ÚLTIMO!
+
+### *Ejercicio 2*
+
+  Calcula n! con tail recursion
+    
+    Ejemplo: 
+    factorial_cola(5) → 120
+    factorial_cola(3) → 6
+    
+    Pistas:
+    - Caso base: n == 0 o n == 1 → retorna acumulador
+    - Caso recursivo: multiplica n con acumulador
+    - Reduce n en cada llamada
+
+### *Ejercicio 3*
+
+Suma todos los elementos de una lista con tail recursion
+    
+    Ejemplo:
+    suma_lista_cola([1, 2, 3, 4]) → 10
+    
+    Pistas: 
+    - Caso base: lista vacía
+    - Caso recursivo: suma primer elemento al acumulador
+    - Procesa el resto de la lista
+
+### *Ejercicio 4*
+
+    Invierte un string usando tail recursion
+    
+    Ejemplo:
+    invertir_cola("hola") → "aloh"
+    invertir_cola("python") → "nohtyp"
+    
+    Pistas: 
+    - Caso base: texto vacío → retorna acumulador
+    - Caso recursivo:  agrega primer carácter AL INICIO del acumulador
+    - Procesa el resto del texto
+
+### *Ejercicio 5*
+
+Calcula base^exponente con tail recursion
+    
+    Ejemplo: 
+    potencia_cola(2, 5) → 32
+    potencia_cola(3, 3) → 27
+    
+    Pistas: 
+    - Caso base: exponente == 0 → retorna acumulador
+    - Caso recursivo: multiplica base con acumulador
+    - Reduce exponente en cada llamada
+
+

@@ -1,4 +1,4 @@
-## Solución Ejercicio 1
+"""## Solución Ejercicio 1
 
 def factorial(numero : int):
     if (numero == 0) or (numero == 1):
@@ -11,8 +11,6 @@ def factorial(numero : int):
 print(factorial(4))
 
 
-
-
 ## Solución Ejercicio 2
 
 def contar_elementos_lista(lista: list):
@@ -23,7 +21,6 @@ def contar_elementos_lista(lista: list):
 
 numeros = [0, 1, [], {}, 5, (), 7, 8, 9]
 print(contar_elementos_lista(numeros))
-
 
 
 ## Solución Ejercicio 3
@@ -84,5 +81,67 @@ print(contar_vocales("holA"))
 print(contar_vocales("python"))
 print(contar_vocales("murcielago"))
 
+"""
+print("=" * 100)
+
+## Solución Ejercicio 1
+
+"""def contar_elementos_cola(lista: list, contador: int = 0):
+    if len(lista) == contador:
+        return contador
     
+    return contar_elementos_cola(lista, contador + 1)
+
+lista = []
+print(contar_elementos_cola(lista))"""
+
+## Solución Ejercicio 2
+
+"""def factorial_cola(numero:int , resultado: int = 1):
+    if numero == 0 or numero == 1:
+        return resultado
     
+    resultado *= numero
+    return factorial_cola(numero - 1, resultado)
+
+print(factorial_cola(5))
+
+"""
+
+
+## Solución Ejercicio 3
+
+"""def sumar_lista_cola(lista: list, indice: int = 0, suma: int = 0):
+    if len(lista) == indice:
+        return suma
+    suma += lista[indice] 
+    return sumar_lista_cola(lista, indice + 1, suma)
+
+lista = [1, 2, 3, 4]
+print(sumar_lista_cola(lista))"""
+
+
+
+## Solución Ejercicio 4
+
+"""def invertir_cola(cadena: str, acumulacion: str = ""):
+    if len(cadena) == 0:
+        return acumulacion
+
+    acumulacion += cadena[-1]
+    return invertir_cola(cadena[:-1], acumulacion)
+
+print(invertir_cola("hola"))"""
+
+## Solución Ejercicio 5
+
+"""def potencia_cola(base: int, exponente: int, acumulador = 1):
+    if exponente == 0:
+        return acumulador
+
+    acumulador *= base
+
+    return potencia_cola(base, exponente - 1, acumulador)
+
+print(potencia_cola(2, 4))
+"""
